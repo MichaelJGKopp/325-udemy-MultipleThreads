@@ -20,6 +20,7 @@ public class Main {
 class StopWatch {
 
   private TimeUnit timeunit;
+  private int i;
 
   public StopWatch(TimeUnit timeunit) {
     this.timeunit = timeunit;
@@ -40,7 +41,7 @@ class StopWatch {
       // User may pass a bad color name, Will just ignore this error.
     }
     String color = threadColor.color();
-    for (int i = unitCount; i > 0; i--) {
+    for (i = unitCount; i > 0; i--) {
       try {
         timeunit.sleep(1);
       } catch (InterruptedException e) {
